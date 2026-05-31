@@ -19,4 +19,6 @@ COPY --from=build /openrouter-bot/openrouter-bot ./
 # Creating directory for logs
 RUN mkdir logs
 
+EXPOSE 8080
+
 ENTRYPOINT ["/openrouter-bot/openrouter-bot"]
